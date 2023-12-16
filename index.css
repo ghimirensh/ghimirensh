@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 40, 40);
+}
+
+.login{
+    position: relative;
+    min-width: 300px;
+    min-height:300px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(44, 40, 40);
+    border: px solid red;
+    border-radius: 5px;
+    box-shadow: 1px 1px 100px 30px aqua;
+   
+}
+
+h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #0ef;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+hr{
+   margin:10px 0px ;
+}
+
+input{
+    position: relative;
+    width: 80%;
+    border-radius: 6px;
+    outline:none;
+    border: 2px solid gray;
+    padding: 5px 10px;
+    margin: 3% 0px;
+    margin-left: 10%;
+}
+
+input:hover{
+    border-color: #0ef;
+}
+
+.forgot{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+label{
+    color: #fff;
+    margin-left: 10%;
+}
+
+.forgot a{
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+button{
+    width: 80%;
+    padding: 6px 0px;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-bottom:10% ;
+    background-color: #0ef;
+    font-weight: 550;
+    border: none;
+}
+
+.span span{
+   position: absolute;
+   height: 1.7%;
+   max-width: 30px;
+   max-height: 7px;
+   width: 7%;
+   border-radius: 5px;
+   background-color: red;  
+   transform-origin: 100px;
+   transform: scale(2,2) rotate(calc(var(--i)*(360deg/50)));
+   animation: login 3s linear infinite;
+   animation-delay: calc(var(--i)*(3s/50));
+
+}
+
+@keyframes login {
+    0%{background-color: red;}
+    25%{background-color: gray;}
+}
